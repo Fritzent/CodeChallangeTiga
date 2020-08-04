@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">CodeChallangeTiga</string>
+    <string name="splashimage">SplashImage</string>
+
+    <string name="text_splash_satu">Bermain Suit melawan sesama pemain</string>
+    <string name="text_splash_dua">Bermain Suit melawan komputer</string>
+    <string name="text_splash_tiga">Tulisankan Nama mu dibawah</string>
+    <string name="text_pilih_lawan">Pilih lawanmu</string>
+    <string name="text_versus">vs CPU</string>
+    <string name="txt_dummy_user">Fritzent</string>
+
+    <string name="txt_rock">Rock</string>
+    <string name="txt_scissors">Scissors</string>
+    <string name="txt_paper">Paper</string>
+    <string name="txt_player">Player</string>
+    <string name="txt_com">Com</string>
+    <string name="txt_dummy">dummy</string>
+    <string name="results">Results</string>
+    <string name="txt_try_again">Click To Try Again</string>
+    <string name="message">Do you want to close the application?</string>
+    <string name="start">GOT IT</string>
+
+    <string name="txt_blank"> </string>
+    <string name="txt_draw">draw</string>
+    <string name="txt_player_win">Player Win</string>
+    <string name="txt_com_win">Com Winner</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ready">Ready</string>
+    <string name="skip">SKIP</string>
+    <string name="next">NEXT</string>
+    <string name="txt_previuous">PREVIOUS</string>
+</resources>

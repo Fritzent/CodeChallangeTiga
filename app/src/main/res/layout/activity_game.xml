@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineIconStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineIconEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineHorizontalMiddleScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".5" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineVerticalMiddleScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+    <TextView
+        android:id="@+id/txt_rock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/txt_rock"
+        android:textColor="@color/colorOrange"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart"
+        app:layout_constraintTop_toTopOf="@id/guideLineTop"
+        />
+
+    <TextView
+        android:id="@+id/txt_scissors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/txt_scissors"
+        android:textColor="@color/colorGreenSoft"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart"
+        app:layout_constraintTop_toBottomOf="@id/txt_rock" />
+
+    <TextView
+        android:id="@+id/txt_paper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/txt_paper"
+        android:textColor="@color/colorUngu"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart"
+        app:layout_constraintTop_toBottomOf="@id/txt_scissors" />
+
+    <TextView
+        android:id="@+id/txt_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/txt_player"
+        android:textColor="@color/colorFont"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@id/guideLineIconStart"
+        app:layout_constraintStart_toStartOf="@id/guideLineIconStart"
+        app:layout_constraintTop_toBottomOf="@id/txt_paper" />
+
+    <ImageView
+        android:id="@+id/playerrockchoose"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/batu"
+        app:layout_constraintEnd_toEndOf="@id/guideLineIconStart"
+        app:layout_constraintStart_toStartOf="@id/guideLineIconStart"
+        app:layout_constraintTop_toBottomOf="@id/txt_player"
+        android:contentDescription="@string/txt_rock"/>
+
+    <ImageView
+        android:id="@+id/playerpaperchoose"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/kertas"
+        app:layout_constraintEnd_toEndOf="@id/guideLineIconStart"
+        app:layout_constraintStart_toStartOf="@id/guideLineIconStart"
+        app:layout_constraintTop_toBottomOf="@id/playerrockchoose"
+        android:contentDescription="@string/txt_paper"/>
+
+    <ImageView
+        android:id="@+id/playerscissorschoose"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/gunting"
+        app:layout_constraintEnd_toEndOf="@id/guideLineIconStart"
+        app:layout_constraintStart_toStartOf="@id/guideLineIconStart"
+        app:layout_constraintTop_toBottomOf="@id/playerpaperchoose"
+        android:contentDescription="@string/txt_scissors"/>
+
+    <TextView
+        android:id="@+id/txt_com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/txt_com"
+        android:textColor="@color/colorFont"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/txt_paper"
+        app:layout_constraintEnd_toEndOf="@id/guideLineIconEnd"
+        app:layout_constraintStart_toStartOf="@id/guideLineIconEnd"/>
+
+    <ImageView
+        android:id="@+id/comRockChoose"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/batu"
+        app:layout_constraintEnd_toEndOf="@id/guideLineIconEnd"
+        app:layout_constraintStart_toStartOf="@id/guideLineIconEnd"
+        app:layout_constraintTop_toBottomOf="@id/txt_com"
+        android:contentDescription="@string/txt_rock"
+        />
+
+    <ImageView
+        android:id="@+id/comPaperChoose"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/kertas"
+        app:layout_constraintEnd_toEndOf="@id/guideLineIconEnd"
+        app:layout_constraintStart_toStartOf="@id/guideLineIconEnd"
+        app:layout_constraintTop_toBottomOf="@id/comRockChoose"
+        android:contentDescription="@string/txt_paper"
+        />
+
+    <ImageView
+        android:id="@+id/comScissorsChoose"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/gunting"
+        app:layout_constraintEnd_toEndOf="@id/guideLineIconEnd"
+        app:layout_constraintStart_toStartOf="@id/guideLineIconEnd"
+        app:layout_constraintTop_toBottomOf="@id/comPaperChoose"
+        android:contentDescription="@string/txt_scissors"
+        />
+
+    <TextView
+        android:id="@+id/txt_results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintTop_toTopOf="@id/guideLineMiddle"
+        android:text="@string/results"
+        android:textSize="16sp"
+        android:textColor="@color/colorFont"
+        />
+
+    <TextView
+        android:id="@+id/winnerResults"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintTop_toBottomOf="@+id/txt_results"
+        android:text="@string/txt_dummy"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="24sp"
+        android:background="@drawable/results_background"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/btn_tryagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_try_again"
+        app:layout_constraintTop_toTopOf="@id/guideLineHorizontalMiddleScreen"
+        app:layout_constraintBottom_toBottomOf="@id/guideLineHorizontalMiddleScreen"
+        app:layout_constraintStart_toStartOf="@id/guideLineVerticalMiddleScreen"
+        app:layout_constraintEnd_toEndOf="@id/guideLineVerticalMiddleScreen"
+        android:textColor="@color/colorBlue"
+        android:textSize="16sp"
+        />
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/ic_baseline_home_24"
+        />
+    <ImageView
+        android:id="@+id/btn_close_apps"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/ic_baseline_close_24"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
